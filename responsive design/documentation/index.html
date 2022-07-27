@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#getting_started">Getting Started</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#for_loops">For loops</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#numbers">Numbers</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#if_statements">If statements</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#swapping">Swapping</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="getting_started">
+        <header>Getting Started</header>
+        <article>
+          <h3>Installing Python</h3>
+          <p>Go to www.python.org and download the latest version of Python (version 3.5 as of this writing). It should be painless to install. </p>
+          <p>If you have a Mac or Linux, you may already have Python on your computer, though it may be an older version. If it is version 2.7 or earlier, then you should install the latest version, as many of the programs in this book will not work correctly on older versions.</p>
+          <h3>A first program</h3>
+          <p>Start IDLE and open up a new window (choose New Window under the File Menu). Type in the following program.</p>
+          <code>temp = eval(input( 'Enter a temperature in Celsius: '))</code>
+          <code>print( 'In Fahrenheit, that is ', 9/5*temp+32) </code>
+          <p>Then, under the Run menu, choose Run Module (or press F5). IDLE will ask you to save the file, and you should do so.</p>
+        </article>
+      </section>
+      <section class="main-section" id="for_loops">
+        <header>For loops</header>
+        <article>
+          <p>Probably the most powerful thing about computers is that they can repeat things over and over very quickly. There are several ways to repeat things in Python, the most common of which is the for loop.</p>
+          <h3>Examples</h3>
+          <code>for i in range(10):
+print( 'Hello ')</code>
+          <p>The structure of a for loop is as follows:</p>
+          <code>for variable name in range( number of times to repeat ):</code>
+          <code>statements to be repeated</code>
+          <p>The syntax is important here. The word for must be in lowercase, the first line must end with a colon, and the statements to be repeated must be indented. Indentation is used to tell Python which statements will be repeated.</p>
+        </article>
+      </section>
+      <section class="main-section" id="numbers">
+        <header>Numbers</header>
+        <article>
+          <p>Because of the way computer chips are designed, integers and decimal numbers are represented differently on computers. Decimal numbers are represented by what are called floating point numbers. The important thing to remember about them is you typically only get about 15 or so digits
+of precision. It would be nice if there were no limit to the precision, but calculations run a lot more quickly if you cut off the numbers at some point.</p>
+          <p>On the other hand, integers in Python have no restrictions. They can be arbitrarily large.</p>
+          <p>or decimal numbers, the last digit is sometimes slightly off due to the fact that computers work in
+binary (base 2) whereas our human number system is base 10.</p>
+<h3>The following are Math Operators in Python:</h3>
+<ul>
+  <li>Addition (+)</li>
+  <li>Subtraction (-)</li>
+  <li>Multiplication (*)</li>
+  <li>Division (/) </li>
+  <li>Exponentiation (**) </li>
+  <li>Integer division (//)</li>
+  <li>Modulo (%)</li>
+</ul>
+        </article>
+      </section>
+      <section class="main-section" id="if_statements">
+        <header>If statements</header>
+        <article>
+          <p>Quite often in programs we only want to do something provided something else is true. Python’s if statement is what we need.</p>
+          <p>The syntax of the if statement is a lot like the for statement in that there is a colon at the end of
+the if condition and the following line or lines are indented. The lines that are indented will be executed only if the condition is true. Once the indentation is done with, the if block is concluded.</p>
+        </article>
+      </section>
+      </section>
+      <section class="main-section" id="swapping">
+        <header>Swapping</header>
+        <article>
+          <p>Quite often we will want to swap the values of two variables, x and y. It would be tempting to try the following:</p>
+          <code>x = y</code>
+          <code>y = x</code>
+          <p>But this will not work. Suppose x is 3 and y is 5. The first line will set x to 5, which is good, but then the second line will set y to 5 also because x is now 5. The trick is to use a third variable to save the value of x:</p>
+          <code>hold = x</code>
+          <code>x = y </code>
+          <code>y = hold</code>
+          <p>In many programming languages, this is the usual way to swap variables. Python, however, provides a nice shortcut:
+x,y = y,x</p>
+
+        </article>
+      </section>
+
+    </main>
+
+  </body>
+</html>
